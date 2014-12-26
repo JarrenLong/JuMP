@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE CodeBlocks_project_file>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="1"/>
+	<Project>
+		<Option title="JuMP Player"/>
+		<Option makefile="Makefile"/>
+		<Option makefile_is_custom="0"/>
+		<Option compiler="0"/>
+		<Build>
+			<Target title="Win32 Release">
+				<Option output="JuMP.exe"/>
+				<Option working_dir="."/>
+				<Option object_output="."/>
+				<Option deps_output="."/>
+				<Option type="0"/>
+				<Option compiler="0"/>
+				<Option projectResourceIncludeDirsRelation="0"/>
+				<Compiler>
+					<Add option="-O2"/>
+					<Add option="-W"/>
+					<Add option="-fexceptions"/>
+					<Add option="-DWIN32"/>
+					<Add option="-DNDEBUG"/>
+					<Add option="-D_WINDOWS"/>
+					<Add option="-D_MBCS"/>
+				</Compiler>
+			</Target>
+		</Build>
+		<Linker>
+			<Add library="E:\Program Files\CodeBlocks\lib\libwinmm.a"/>
+			<Add library="E:\Program Files\CodeBlocks\lib\libcomctl32.a"/>
+			<Add library="E:\Program Files\CodeBlocks\lib\libtinyxml.a"/>
+		</Linker>
+		<Unit filename="main.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="Win32 Release"/>
+			<Breakpoint line="132" enabled="1" pass="0" />
+			<Breakpoint line="133" enabled="1" pass="0" />
+		</Unit>
+		<Unit filename="resource.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="Win32 Release"/>
+		</Unit>
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES"/>
+			<Option objectName="resource.res"/>
+			<Option target="Win32 Release"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
